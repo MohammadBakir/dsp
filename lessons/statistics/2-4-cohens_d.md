@@ -1,5 +1,19 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+---
+#### Table of Contents
+[1)  Line Breaks](#section-a)  
+[2)  Text Formatting](#section-b)  
+[3)  Referencing Other Markdown Files](#section-c)  
+[4)  Horizontal Rules](#section-d)  
+[5)  Emoji's](#section-e)  
+[6)  Links](#section-f)  
+[7)  Block Code, Language-specific](#section-g)  
+[8)  Tables](#section-h)  
+[References](#section-r)
+
+---
+
 ### Steps to solve the problem
 [1) Import required libraries and packages](#section-a)
 [2) Read data using nsfg.ReadFemPreg](#section-b) 
