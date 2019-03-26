@@ -1,7 +1,8 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
 ### Steps to solve the problem
-[1. Import required libraries and packages](#section-a) 
+[1) Import required libraries and packages](#section-a)
+[1)  Line Breaks](#section-a)
 [2. Read data using nsfg.ReadFemPreg()](#section-b) 
 [3. From pregnancy data, extract live birth data](#section-c) 
 [4. From live birth data split data into those born first and those born after](#section-d) 
