@@ -16,47 +16,54 @@
 
 ## <a name="section-a"></a> 1. Import Required Libraries and Packages
 
+```{python}
 import nsfg
 import pandas as pd
 import numpy as np
 import thinkstats2
-
+```
 ---
 
-## <a name="section-a"></a> 2. Read data
+## <a name="section-b"></a> 2. Read data
+```{python}
 preg = nsfg.ReadFemPreg()
-
+```
 --
 
-## <a name="section-a"></a> 3. From pregnancy data, extract live birth data
+## <a name="section-c"></a> 3. From pregnancy data, extract live birth data
+```{python}
 live_births = preg[preg.prgoutcome == 1]
-
+```
 --
 
-## <a name="section-a"></a> 4. From live birth data split data into those born first and those born after
+## <a name="section-d"></a> 4. From live birth data split data into those born first and those born after
+```{python}
 first_born = live_births[live_births.birthord == 1]
 others_born = live_births[live_births.birthord != 1]
-
+```
 --
 
-## <a name="section-a"></a> 5. Compare Averages of total weight of those born first and the others
+## <a name="section-e"></a> 5. Compare Averages of total weight of those born first and the others
+```{python}
 first_born_mean = first_born['totalwgt_lb'].mean()
 others_born_mean = others_born['totalwgt_lb'].mean()
 
 print(first_born_mean, others_born_mean)
 
 '''
-first_born_mean = 7.201094430437772
-others_born_mean = 7.325855614973262
-difference is negligible, per the mean first babies born are lighter than than others. 
+    first_born_mean = 7.201094430437772
+    others_born_mean = 7.325855614973262
+    difference is negligible, per the mean first babies born are lighter than than others. 
 '''
-
+```
 ---
 
-## <a name="section-a"></a> 6. Define Cohen Effect Size
+## <a name="section-f"></a> 6. Define Cohen Effect Size
+```{python}
 '''
-This functon computes the Cohen effect size, which is the difference in means expressed in number of standard deviations:
+    This functon computes the Cohen effect size, which is the difference in means expressed in number of standard deviations:
 '''
+
 def CohenEffectSize(group1, group2):
     """Computes Cohen's effect size for two groups.
     
@@ -75,32 +82,36 @@ def CohenEffectSize(group1, group2):
     pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)
     d = diff / np.sqrt(pooled_var)
     return d
-    
+```
 ---
 
-## <a name="section-a"></a> 7. Define Cohen Effect Size
+## <a name="section-g"></a> 7. Define Cohen Effect Size
+```{python}
 CohenEffectSize(first_born.totalwgt_lb, others_born.totalwgt_lb)
 '''
-Cohen Effect Size  = -0.088672927072602
-The size of the difference between the first born and others born is non significant. 
+    Cohen Effect Size  = -0.088672927072602
+    The size of the difference between the first born and others born is non significant. 
 '''
+```
 
 ---
 
-## <a name="section-a"></a> 8. Compare averages of length of pregnancies of those born first to others born
+## <a name="section-h"></a> 8. Compare averages of length of pregnancies of those born first to others born
+```{python}
 first_born_prglngth_mean = first_born.prglngth.mean()
 others_born_prglngth_mean = others_born.prglngth.mean()
 print(first_born_prglngth_mean, others_born_prglngth_mean)
 
 '''
-Average Pregnancy Length of those born first is 38.60095173351461 
-Average Pregnancy Length of those born second is 38.52291446673706
+    Average Pregnancy Length of those born first is 38.60095173351461 
+    Average Pregnancy Length of those born second is 38.52291446673706
 '''
 
 #CohenEffectSize(first_born.prglngth, others_born.prglngth)
-'''
-Cohen Effect Size  = 0.028879044654449883
-The size of the difference between the pregnancy length of those born first and the others is non significant. 
-'''
 
+'''
+    Cohen Effect Size  = 0.028879044654449883
+    The size of the difference between the pregnancy length of those born first and the others is non significant. 
+'''
+```
 ---
