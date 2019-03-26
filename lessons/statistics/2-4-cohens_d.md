@@ -2,7 +2,7 @@
 
 ---
 #### Table of Contents
-[1)  Line Breaks](#section-a)  
+[1)  Import required libraries and packages](#section-a)  
 [2)  Text Formatting](#section-b)  
 [3)  Referencing Other Markdown Files](#section-c)  
 [4)  Horizontal Rules](#section-d)  
