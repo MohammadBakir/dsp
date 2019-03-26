@@ -1,16 +1,17 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
-Steps to solve the problem
-#1. Import required libraries and packages 
-#2. Read data using nsfg.ReadFemPreg()
-#3. From pregnancy data, extract live birth data
-#4. From live birth data split data into those born first and those born after
-#5. Compare Averages of total weight of those born first and the others
-#6. Define Cohen Effect Size 
-#7. Calculate Cohen Effect Size
-#8. Compare averages of length of pregnancies of those born first to others born
+### Steps to solve the problem
+[1. Import required libraries and packages](#section-a) 
+[2. Read data using nsfg.ReadFemPreg()](#section-b) 
+[3. From pregnancy data, extract live birth data](#section-c) 
+[4. From live birth data split data into those born first and those born after](#section-d) 
+[5. Compare Averages of total weight of those born first and the others](#section-e) 
+[6. Define Cohen Effect Size ](#section-f) 
+[7. Calculate Cohen Effect Size](#section-g) 
+[8. Compare averages of length of pregnancies of those born first to others born](#section-h) 
 
-<h3> Import Required Libraries <h3>
+---
+## <a name="section-a"></a> 1. Import Required Libraries
 
 import nsfg
 import pandas as pd
