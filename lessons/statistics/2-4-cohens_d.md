@@ -28,20 +28,20 @@ import thinkstats2
 ```{python}
 preg = nsfg.ReadFemPreg()
 ```
---
+---
 
 ## <a name="section-c"></a> 3. From pregnancy data, extract live birth data
 ```{python}
 live_births = preg[preg.prgoutcome == 1]
 ```
---
+---
 
 ## <a name="section-d"></a> 4. From live birth data split data into those born first and those born after
 ```{python}
 first_born = live_births[live_births.birthord == 1]
 others_born = live_births[live_births.birthord != 1]
 ```
---
+---
 
 ## <a name="section-e"></a> 5. Compare Averages of total weight of those born first and the others
 ```{python}
