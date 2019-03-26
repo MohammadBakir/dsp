@@ -14,7 +14,7 @@
 
 ---
 
-### Steps to solve the problem
+#### Steps to solve the problem
 [1) Import required libraries and packages](#section-a)
 [2) Read data using nsfg.ReadFemPreg](#section-b) 
 [3) From pregnancy data, extract live birth data](#section-c) 
