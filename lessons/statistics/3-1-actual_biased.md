@@ -33,6 +33,7 @@ pmf_household_children = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
 thinkplot.Pmf(pmf_household_children)
 thinkplot.Config(xlabel = 'Number of Children', ylabel = 'PMF')
 ```
+![Image of PMF Plot](Images/PMF.png?raw=true)
 ---
 
 ## <a name="section-d"></a> 4.Bias Bmf
