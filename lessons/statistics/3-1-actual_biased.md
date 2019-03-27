@@ -57,6 +57,8 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf_household_children, biased_pmf])
 thinkplot.Show(xlabel = 'class size', ylabel = 'PMF')
 ```
+
+![Image of BiasedPMF Plot](Images/BiasedPMF.png?raw=true)
 ---
 
 ## <a name="section-f"></a> 6. PMF VS Bias Means
