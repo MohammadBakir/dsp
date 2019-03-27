@@ -38,7 +38,7 @@ thinkplot.Show(xlabel='probability', ylabel='PMF')
   as a result the probability associated with each values is small. We can't ascertain from the data the probability of each value. 
 '''
 ```
-![Image of PMF Plot](Images/RandNumPMF.png?raw=true)
+![Image of Random Numbers PMF Plot](Images/RandNumPMF.png?raw=true)
 
 ---
 
@@ -51,7 +51,7 @@ thinkplot.Show(xlabel='Percentile Rank', ylabel='CDF')
   The distribution appears to be linearly uniform. For example 50% of the sample is below the 50th percentile. 
 '''
 ```
-![Image of BiasedPMF Plot](Images/RandNumCDF.png?raw=true)
+![Image of Random Numbers CDF Plot](Images/RandNumCDF.png?raw=true)
 
 ---
 
