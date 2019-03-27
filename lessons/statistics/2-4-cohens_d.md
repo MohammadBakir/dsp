@@ -2,6 +2,14 @@
 
 ---
 
+## Problem Statement
+
+Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others.
+
+Compute Cohen’s effect size to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
+
+---
+
 #### Steps to solve the problem
 [1)  Import required libraries and packages](#section-a)  
 [2)  Read data using nsfg.ReadFemPreg](#section-b)  
