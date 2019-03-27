@@ -1,3 +1,57 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+---
+
+#### Steps to solve the problem
+[1)  Import required libraries and packages](#section-a)  
+[2)  Generate Random Numbers](#section-b)  
+[3)  Generate PMF Plot](#section-c)  
+[4)  Generate CDF Plot](#section-d)  
+
+---
+
+## <a name="section-a"></a> 1. Imports
+
+```{python}
+import numpy as np
+import nsfg
+import thinkstats2
+import thinkplot
+```
+---
+
+## <a name="section-b"></a> 2. Random Numbers
+```{python}
+random_numbers = np.random.random(1000)
+pmf = thinkstats2.Pmf(random_numbers, label='random numbers')
+```
+
+---
+
+## <a name="section-c"></a> 3. PMF Plot
+```{python}
+thinkplot.PrePlot()
+thinkplot.Pmfs([pmf], linewidth=0.05)
+thinkplot.Show(xlabel='probability', ylabel='PMF')
+'''
+  Can't determine if distribution is meaningful. PMF works well if number of values is small. The number of values is large, 
+  as a result the probability associated with each values is small. We can't ascertain from the data the probability of each value. 
+'''
+```
+![Image of PMF Plot](Images/RandNumPMF.png?raw=true)
+
+---
+
+## <a name="section-d"></a> 4.CDF Plot
+```{python}
+cdf = thinkstats2.Cdf(random_numbers, label='random_numbers')
+thinkplot.Cdf(cdf)
+thinkplot.Show(xlabel='Percentile Rank', ylabel='CDF')
+'''
+  The distribution appears to be linearly uniform. For example 50% of the sample is below the 50th percentile. 
+'''
+```
+![Image of BiasedPMF Plot](Images/RandNumCDF.png?raw=true)
+
+---
+
