@@ -12,7 +12,7 @@ Now compute the biased distribution we would see if we surveyed the children and
 
 Plot the actual and biased distributions, and compute their means. 
 
---
+---
 
 #### Steps to solve the problem
 [1)  Import required libraries and packages](#section-a)  
