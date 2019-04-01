@@ -86,26 +86,26 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
-Probability (Identical Twins & Twin Brother) = PR(identical twins)PR(both boys and identical twins) = 1/2 * 1/300
-Probability (Fraternal Twins & Twin Brother) = PR(fraternal twins)PR(both boys and faternal twins) = 1/4 * 1/125
-Probability (identical twins and twin brother) = PR(identical twins & twin brother) / PR(twin brother)
-                                               = (1/2 * 1/300) / (1/2 * 1/300 + 1/4 * 1/125)
-                                               = 5/11
+- Probability (Identical Twins & Twin Brother) = PR(identical twins)PR(both boys and identical twins) = 1/2 * 1/300
+- Probability (Fraternal Twins & Twin Brother) = PR(fraternal twins)PR(both boys and faternal twins) = 1/4 * 1/125
+- Probability (identical twins and twin brother) = PR(identical twins & twin brother) / PR(twin brother)
+                                                 = (1/2 * 1/300) / (1/2 * 1/300 + 1/4 * 1/125)
+                                                 = 5/11
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-Bayesian inference:
-Uses probability for both hypothese and data
-Depends on prior likelihood of observed data
-Computationally intensive.
+## Bayesian inference:
+- Uses probability for both hypothese and data
+- Depends on prior likelihood of observed data
+- Computationally intensive.
 
-Frequentist inference:
-Never uses or gives probability of hypothesis
-Depends on likelihood for both observed and unobserved data
-Less Computationally intensive.
+## Frequentist inference:
+- Never uses or gives probability of hypothesis
+- Depends on likelihood for both observed and unobserved data
+- Less Computationally intensive.
 
 ---
 
